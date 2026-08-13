@@ -530,19 +530,19 @@ import numpy as np
 array1 = np.array ([12,22,18,16,10])
 Series 7 = pd.series (array1)
 series 7
-
+```
 میخوام یک فیلتری رو اعمال کنم روی داده ها.
 مثلا میخوام داده هایی رو که بزرگتر از ۱۲ هست رو فیلتر کنه.
 
 ```python
 Series 7 > 12 -> True یا False
 Series 7 [Series 7 > 12] -> اندیس و عدد رو نشون میده
-
+```
 متد mean هم قبلا بهش اشاره کردیم -> میانگین رو حساب میکنه.
 
 ```python
 Series 7 [Series 7 >= series 7.mean ()] -> اعداد بزرگتر از میانگین رو میگه
-
+```
 DataFrame
 
 برای ایجاد داده ساختار دو بعدی از متد DataFrame استفاده میکنیم.
@@ -563,13 +563,13 @@ print(type(df1)) -> تایپ رو میگه
 print(df1.shape) -> تعداد سطر و ستون رو میگه
 $\downarrow \quad \downarrow$
 سطر $\quad$ ستون
-
+```
 میتونیم columns رو تغییر بدیم، به این صورت:
 
 ```python
 df2 = pd.DataFrame ([[1,2,3], [4,5,6], [7,8,9], [10,11,12]], columns = ['a','b','c'])
 `df2` چاپ میکنه $\leftarrow$ به جای 0 1 2 $\leftarrow$ abc
-
+```
 من میتونم یک داده ساختار دو بعدی از نوع array ایجاد کنم
 و یک لیستی برای columns بسازم و بگم DataFrame از این دوتا داده ساختار بگیره.
 نمونه سورش کن به $\leftarrow$ Python 2_18
@@ -612,7 +612,7 @@ L1 = [random.randint(20, 90) for i in range (752)]
 df["Age"] = L1
 
 df
-
+```
 من اگر بخوام اسم ستون هارو تغییر بدم:
 `df = df.rename(columns={'Age':'a'})`
 
